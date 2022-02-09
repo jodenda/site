@@ -1,29 +1,590 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>page perso de jodenda</title>
-	<style>
-		body {
-  			background-color: lightblue;
-		}
-
-		h1 {
-  			color: white;
-  			text-align: center;
-		}
-
-p {
-  font-family: verdana;
-  font-size: 20px;
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www.ac-poitiers.fr/svt/res_med/Rasmol/commandes.htm -->
+<HTML><HEAD><TITLE>Rasmol : principales commandes</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="Rasmol : principales commandes" name=title>
+<META content="Jean Marc Coulais" name=author>
+<META 
+content="Principales commandes à asisir dans le menu command line du logiciel Rasmol" 
+name=description>
+<META content="rasmol, command line, molécules" name=keywords>
+<META content=" Lycee" name=niveau>
+<META content=aucune name=reference>
+<META content=" Laboratoires, Logiciels, conseils" name=ressources>
+<META content=Elèves,Enseignants,Laboratoire name=user>
+<META 
+content="formation, se documenter, travaux d'élèves, travaux pratiques, utiliser les TICE" 
+name=activities>
+<META content="conseils techniques, logiciels" name=assistance>
+<META 
+content="Sciences de la vie, biologie moléculaire, génétique, immunologie, hormones, médicaments du système nerveux central, drogues" 
+name=themes>
+<STYLE type=text/css>TD {
+	FONT-SIZE: 10pt; COLOR: #006633; FONT-FAMILY: Arial, Helvetica, sans-serif
 }
-</style>
-</head>
-<body>
+.cellule {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt; COLOR: #ffffff; BACKGROUND-COLOR: #00cc00; TEXT-ALIGN: center
+}
+.commandtitre {
+	FONT-WEIGHT: bold; FONT-SIZE: 18pt; COLOR: #000000; FONT-FAMILY: "Courier New", Courier, mono
+}
+.commande10 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; FONT-FAMILY: "Courier New", Courier, mono
+}
+.blanc {
+	FONT-WEIGHT: bold; COLOR: #ffffff; BACKGROUND-COLOR: #666666
+}
+.TITRE {
+	FONT-WEIGHT: bold; FONT-SIZE: 18pt; COLOR: #cc0000
+}
+</STYLE>
 
-<h1>Ma première page Web</h1>
-<p>This is a paragraph.</p>
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY bgColor=#e6f7ec>
+<TABLE width="95%" align=center border=0>
+  <TBODY>
+  <TR>
+    <TD height=33>
+      <DIV align=center><B class=TITRE>Principales commandes de 
+    Rasmol</B></DIV></TD></TR>
+  <TR>
+    <TD height=14>
+      <DIV class=cellule ?>S'informer... &gt; <SPAN 
+      class=commandtitre>show</SPAN> </DIV></TD></TR>
+  <TR>
+    <TD height=18>
+      <TABLE width="100%" border=1>
+        <TBODY>
+        <TR>
+          <TD width="25%" height=29>
+            <DIV align=center><B>Projet</B></DIV></TD>
+          <TD colSpan=3 height=29>
+            <DIV align=center><B><FONT color=#000000>Commandes de 
+            base</FONT></B></DIV></TD>
+          <TD width="35%" height=29>
+            <DIV align=center><B>Explications et <FONT 
+            color=#000000>exemples</FONT></B></DIV></TD></TR>
+        <TR>
+          <TD width="25%"><B>S'informer sur la molécule affichée</B></TD>
+          <TD class=commande colSpan=3>Show information</TD>
+          <TD width="35%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Présente dans command line quelques informations sur la 
+            molécule.</TD></TR>
+        <TR>
+          <TD width="25%"><B>S'informer sur la séquence de la molécule</B></TD>
+          <TD class=commande colSpan=3>Show sequence</TD>
+          <TD width="35%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Présente la séquence d'une molécule : séquence de 
+            nucléotides pour un acide nucléique, séquence d'acides aminés pour 
+            un protéine. <BR><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Si la molécule contient plusieurs chaînes ou molécules 
+            distinctes, la séquence est détaillée par chaîne. </TD></TR>
+        <TR>
+          <TD width="25%"><B>S'informer sur un atome, un acide aminé, une 
+            chaîne…</B></TD>
+          <TD colSpan=3><I><B><FONT color=#000000>Cliquer sur l'atome et lire 
+            la réponse dans le module Command line</FONT></B></I></TD>
+          <TD width="35%">&nbsp;</TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD>
+      <DIV class=cellule>Sélectionner... &gt; <SPAN 
+      class=commandtitre>select</SPAN></DIV></TD></TR>
+  <TR>
+    <TD height=1183>
+      <TABLE width="100%" border=1>
+        <TBODY>
+        <TR>
+          <TD colSpan=2>
+            <DIV align=center><B>Projet</B></DIV></TD>
+          <TD width="13%">
+            <DIV align=center><B><FONT color=#000000>Commandes de 
+            base</FONT></B></DIV></TD>
+          <TD width="13%">
+            <DIV align=center><B>Projet avancé</B></DIV></TD>
+          <TD width="16%">
+            <DIV align=center><B><FONT color=#000000>Commandes 
+            avancées</FONT></B></DIV></TD>
+          <TD width="34%">
+            <DIV align=center><B>Explications et <FONT 
+            color=#000000>exemples</FONT></B></DIV></TD></TR>
+        <TR>
+          <TD colSpan=2><B>Sélectionner</B><BR><B>toute la molécule</B></TD>
+          <TD class=commande colSpan=4>select all</TD></TR>
+        <TR>
+          <TD colSpan=6>&nbsp;</TD></TR>
+        <TR>
+          <TD width="15%" rowSpan=6><B>Sélectionner<BR>des atomes par leur 
+            catégorie</B></TD>
+          <TD width="9%"><B>carbone</B></TD>
+          <TD class=commande10 width="13%">select carbon</TD>
+          <TD width="13%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection de tous les atomes de carbone</TD>
+          <TD class=commande10 width="16%">select *.C? 
+            <P>select *.C??</P></TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection des carbones notés CA, CB, 
+            <P><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection des carbones notés C5M…</P></TD></TR>
+        <TR>
+          <TD width="9%"><B>oxygène</B></TD>
+          <TD class=commande10 width="13%">select oxygen</TD>
+          <TD width="13%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection de tous les atomes d' oxygène</TD>
+          <TD class=commande10 width="16%">select *.O? 
+            <P>select *.O??</P></TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" width=15> 
+            Sélection des oxygènes notés O1, O2… 
+            <P><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection des oxygènes notés O5*, O2P</P></TD></TR>
+        <TR>
+          <TD width="9%"><B>azote</B></TD>
+          <TD class=commande10 width="13%">select nitrogen</TD>
+          <TD width="13%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" width=15> 
+            Sélection de tous les atomes d'azote</TD>
+          <TD class=commande10 width="16%">select *.N?</TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection des azotes notés N2, N4...</TD></TR>
+        <TR>
+          <TD width="9%"><B>soufre</B></TD>
+          <TD class=commande10 colSpan=2>select sulfur</TD>
+          <TD class=commande10 width="16%">select *.s</TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection de tous les atomes de soufre</TD></TR>
+        <TR>
+          <TD width="9%"><B>fer</B></TD>
+          <TD class=commande10 colSpan=2>select iron</TD>
+          <TD class=commande10 width="16%">select *.fe</TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection de tous les atomes de&nbsp; fer</TD></TR>
+        <TR>
+          <TD width="9%"><B>phosphore</B></TD>
+          <TD class=commande10 colSpan=2>select phosphorus</TD>
+          <TD class=commande10 width="16%">select *.p</TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection de tous les atomes de phosphore</TD></TR>
+        <TR>
+          <TD colSpan=2 height=97><B>Sélectionner<BR>par leur numéro</B></TD>
+          <TD class=commande10 colSpan=3 height=97>select atomno=120</TD>
+          <TD width="34%" height=97>
+            <P><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection de l'atome 120. Ce numéro d'atome est fourni dans 
+            commande line quand un clic est fait sur un atome.(Ex :<B><FONT 
+            color=#000000> O4* 120</FONT></B> = atome d'oxygène numéro 
+          120)</P></TD></TR>
+        <TR>
+          <TD width="15%" rowSpan=6><B>Sélectionner <BR>des nucléotides de 
+            l'ADN</B></TD>
+          <TD width="9%"><B>adénine</B></TD>
+          <TD class=commande10 colSpan=3>select a</TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection des nucléotides à adénine</TD></TR>
+        <TR>
+          <TD width="9%" height=16><B>thymine</B></TD>
+          <TD class=commande10 colSpan=3 height=16>select t</TD>
+          <TD width="34%" height=16><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection des nucléotides à thymine</TD></TR>
+        <TR>
+          <TD width="9%"><B>guanine</B></TD>
+          <TD class=commande10 colSpan=3>select g</TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection des nucléotides à guanine</TD></TR>
+        <TR>
+          <TD width="9%"><B>cytosine</B></TD>
+          <TD class=commande10 colSpan=3>select c</TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection des nucléotides à cytosine</TD></TR>
+        <TR>
+          <TD width="9%" height=27><B>couple AT</B></TD>
+          <TD class=commande10 colSpan=3 height=27>select at</TD>
+          <TD width="34%" height=27><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection des couples Adénine-Thymine</TD></TR>
+        <TR>
+          <TD width="9%"><B>couple CG</B></TD>
+          <TD class=commande10 colSpan=3>select cg</TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection des couples Cytosine-Guanine</TD></TR>
+        <TR>
+          <TD width="15%" rowSpan=8><B>Sélectionner<BR>des acides aminés d'une 
+            protéine</B></TD>
+          <TD width="9%" rowSpan=3><B>par leur numéro</B></TD>
+          <TD class=commande10 colSpan=3>select 1</TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection de l'acide aminé numéro 1. Si la molécule possède 
+            plusieurs chaînes, tous les acides aminés 1 sont sélectionnés.</TD></TR>
+        <TR>
+          <TD class=commande10 colSpan=3>select 1-5</TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection des acides aminés 1 à 5</TD></TR>
+        <TR>
+          <TD class=commande10 colSpan=3>select 1,4,10</TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection des acides aminés 1, 4 et 10</TD></TR>
+        <TR>
+          <TD width="9%"><B>par le type d'acide aminé</B></TD>
+          <TD class=commande10 colSpan=3>select cys</TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection de toutes les cystéines</TD></TR>
+        <TR>
+          <TD width="9%"><B>un acide aminé précis</B></TD>
+          <TD class=commande10 colSpan=3>select pro10</TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection de la proline 10 Commande utile pour réaliser un 
+            sélection sur une molécule à plusieurs chaînes.</TD></TR>
+        <TR>
+          <TD width="9%" rowSpan=3><B>par leurs propriétés</B></TD>
+          <TD class=commande10 colSpan=3>select polar</TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection des acides aminés qui portent une charge 
+            électrique</TD></TR>
+        <TR>
+          <TD class=commande10 colSpan=3>select hydrophobic</TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection des acides aminés qui sont hydrophobes</TD></TR>
+        <TR>
+          <TD class=commande10 colSpan=3>select not hydrophobic</TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection des acides aminés qui ne sont pas hydrophobes 
+            (=hydrophiles)</TD></TR>
+        <TR>
+          <TD colSpan=2><B>Sélectionner la chaîne protéique d'une 
+          molécule</B></TD>
+          <TD class=commande10 colSpan=3>select protein</TD>
+          <TD width="34%" rowSpan=2><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Ces commandes sont utiles pour une molécule montrant 
+            plusieurs chaînes comme une ribonucléase avec son substrat.</TD></TR>
+        <TR>
+          <TD colSpan=2><B>Sélectionner la chaîne nucléique d'une 
+          molécule</B></TD>
+          <TD class=commande10 colSpan=3>select nucleic</TD></TR>
+        <TR>
+          <TD colSpan=2 height=54><B>Sélectionner une chaîne</B></TD>
+          <TD class=commande10 colSpan=3 height=54>select *A</TD>
+          <TD width="34%" height=54><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection de la chaîne A de la molécule. Faire un show 
+            séquence pour connaître les chaînes présentes</TD></TR>
+        <TR>
+          <TD colSpan=2><B>Sélectionner l'hème d'une globine</B></TD>
+          <TD class=commande10 colSpan=3>select hem</TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélection de tous les atomes de 
+    l'hème.</TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=cellule>Sélectionner à l'aide d'opérateurs</TD></TR>
+  <TR>
+    <TD height=225>
+      <TABLE width="100%" border=1>
+        <TBODY>
+        <TR>
+          <TD width="25%" height=22>
+            <DIV align=center><B>Projet</B></DIV></TD>
+          <TD width="41%" height=22>
+            <DIV align=center><B><FONT color=#000000>Commandes 
+            avancées</FONT></B></DIV></TD>
+          <TD width="34%" height=22>
+            <DIV align=center><B>Explications et <FONT 
+            color=#000000>exemples</FONT></B></DIV></TD></TR>
+        <TR>
+          <TD width="25%"><B>et</B></TD>
+          <TD class=commande10 width="41%">and</TD>
+          <TD width="34%"><SPAN class=commande10>select carbon and 
+            oxygen<BR></SPAN><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélectionne tous les atomes de carbone et d'oxygène</TD></TR>
+        <TR>
+          <TD width="25%"><B>non</B></TD>
+          <TD class=commande10 width="41%">not</TD>
+          <TD width="34%"><SPAN class=commande10>select not 
+            nitrogen<BR></SPAN><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Elimine les atomes d'azote de la sélection courante 
+            <P></P>
+            <P></P></TD></TR>
+        <TR>
+          <TD width="25%" height=73><B>et ne pas</B></TD>
+          <TD class=commande10 width="41%" height=73>and not</TD>
+          <TD width="34%" height=73><SPAN class=commande10>select carbon and 
+            not .C?<BR></SPAN><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Sélectionne les atomes de carbone puis élimine les carbones 
+            notés CA, CB…</TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=cellule>Colorer &gt;&gt; color ou colour</TD></TR>
+  <TR>
+    <TD height=479>
+      <TABLE width="100%" border=1>
+        <TBODY>
+        <TR>
+          <TD width="25%" height=9>
+            <DIV align=center><B>Projet</B></DIV></TD>
+          <TD width="14%" height=9>
+            <DIV align=center><B><FONT 
+color=#000000>Commande</FONT></B></DIV></TD>
+          <TD colSpan=2 height=9>
+            <DIV align=center><B>Couleurs</B></DIV></TD>
+          <TD width="34%" height=9>
+            <DIV align=center><B>Explications et <FONT 
+            color=#000000>exemples</FONT></B></DIV></TD></TR>
+        <TR>
+          <TD width="25%" height=165><B>Couleurs</B></TD>
+          <TD class=commande10 width="14%" height=165>color</TD>
+          <TD class=commande10 colSpan=2 
+            height=165>green<BR>blue<BR>greenblue<BR>cyan<BR>violet<BR>orange<BR>red<BR>redorange<BR>black<BR>white<BR>purple<BR>magenta</TD>
+          <TD width="34%" height=165><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Cette commande colore les éléments sélectionnés avec la 
+            commande <SPAN class=commande10>select</SPAN>. 
+            <P>Exemple : sélectionner toute la molécule et la colorier en 
+            blanc.<BR><SPAN class=commande10>select all<BR>color 
+White</SPAN></P>
+            <P>Sélectionner l'acide aminé 10 et le colorer en bleu<BR><SPAN 
+            class=commande10>select 10<BR>color blue</SPAN></P></TD></TR>
+        <TR>
+          <TD width="25%" height=92><B>Couleurs par défaut</B></TD>
+          <TD class=commande10 width="14%" height=92>color</TD>
+          <TD class=commande10 width="9%" height=92>cpk</TD>
+          <TD width="18%" height=92><B><FONT color=#999999>Carbone</FONT></B> 
+            : gris<BR><FONT color=#ff0000><B>Oxygène</B></FONT> : rouge<BR><FONT 
+            color=#ffffff><B><SPAN class=blanc>Hydrogene</SPAN></B></FONT> : 
+            blanc<BR><FONT color=#6666cc><B>Azote</B></FONT> : 
+            bleu-gris<BR><FONT color=#ffff00><B><FONT 
+            color=#999900>Soufre</FONT></B></FONT> : jaune<BR><FONT 
+            color=#ff6633><B>Phosphore</B></FONT> : orange<BR><B>Chlore</B> : 
+            vert<BR><B><FONT color=#3333ff>Sodium</FONT></B> : bleu<BR><FONT 
+            color=#cc66cc><B><FONT color=#ff9900>Fer</FONT></B></FONT> : 
+            pourpre<BR><FONT color=#666666><B>Calcium</B></FONT>,<FONT 
+            color=#666666><B>métaux</B></FONT> : gris foncé</TD>
+          <TD width="34%" height=92>&nbsp;</TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=cellule>Modifier l'affichage à l'écran</TD></TR>
+  <TR>
+    <TD height=596>
+      <TABLE width="100%" border=1>
+        <TBODY>
+        <TR>
+          <TD colSpan=2 height=16>
+            <DIV align=center><B>Projet</B></DIV></TD>
+          <TD colSpan=3 height=16>
+            <DIV align=center><B><FONT 
+color=#000000>Commande</FONT></B></DIV></TD>
+          <TD width="34%" height=16>
+            <DIV align=center><B>Explications et <FONT 
+            color=#000000>exemples</FONT></B></DIV></TD></TR>
+        <TR>
+          <TD colSpan=2 height=93><B>zoom</B></TD>
+          <TD class=commande10 colSpan=3 height=93>zoom 100</TD>
+          <TD width="34%" height=93><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Le zoom 100 correspond à la taille par défaut.<BR>Pour 
+            agrandir : mettre un nombre &gt; 100<BR>Pour diminuer : mettre un 
+            nombre &lt; 100</TD></TR>
+        <TR>
+          <TD colSpan=2 height=104><B>Masquer des chaînes </B></TD>
+          <TD class=commande10 colSpan=3 height=104>restrict *A</TD>
+          <TD width="34%" height=104><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>La chaîne A est masquée. L'autre ou les autres chaînes 
+            restent affichées.<BR>Pour afficher les chaînes&nbsp; masquées, 
+            saisir : <BR><SPAN class=commande10>select all<BR></SPAN><IMG 
+            height=13 src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Choisir un mode de visualisation dans le menu display</TD></TR>
+        <TR>
+          <TD width="12%" rowSpan=3><B>Mode de visualisation</B></TD>
+          <TD width="11%"><B>en fil de fer</B></TD>
+          <TD colSpan=2 rowSpan=3><B>Opérations à réaliser avec le menu 
+            Display </B>
+            <P></P></TD>
+          <TD class=commande10 width="20%">wireframe 10</TD>
+          <TD width="34%">
+            <P><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Modifie l'épaisseur des liaisons.<BR><SPAN 
+            class=commande10>10</SPAN> : liaisons fines<BR><SPAN 
+            class=commande10>100</SPAN> : liaisons épaisses. Correspond à la 
+            commande sticks du menu Display.</P></TD></TR>
+        <TR>
+          <TD width="11%"><B>en sphères</B></TD>
+          <TD class=commande10 width="20%">spacefill 100</TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Modifie la taille des sphères<BR><SPAN 
+            class=commande10>10</SPAN> : petite taille<BR><SPAN 
+            class=commande10>100</SPAN> : taille qui correspond à la commande 
+            <I><B>Ball &amp; Sticks</B></I> du menu Display<BR><SPAN 
+            class=commande10>400</SPAN> : taille obtenue avec la commande 
+            spacefill</TD></TR>
+        <TR>
+          <TD width="11%"><B>Ball &amp; Stick</B></TD>
+          <TD class=commande10 width="20%">wireframe 50<BR>spacefill 120</TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Equivalent de la commande <B><I>Ball&amp;Stick </I></B>du 
+            menu Display</TD></TR>
+        <TR>
+          <TD width="12%" height=25 rowSpan=2><B>Montrer masquer des 
+            liaisons</B></TD>
+          <TD width="11%" height=25><B>liaisons hydrogène</B></TD>
+          <TD class=commande10 colSpan=3 height=25>hbonds on<BR>hbonds off</TD>
+          <TD width="34%" height=25><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Montre les liaisons hydrogène<BR><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Masque les liaisons hydrogène</TD></TR>
+        <TR>
+          <TD width="11%" height=64><B>liaisons soufre</B></TD>
+          <TD class=commande10 colSpan=3 height=64>ssbonds on<BR>ssbonds 
+off</TD>
+          <TD width="34%" height=64><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Montre les ponts disulfures<BR><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Masque les&nbsp; ponts disulfures</TD></TR>
+        <TR>
+          <TD width="12%" rowSpan=2><B>Modifier les liaisons</B></TD>
+          <TD width="11%"><B>la couleur</B></TD>
+          <TD class=commande10 colSpan=3>color hbonds green<BR>color ssbonds 
+            yellow</TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Les liaisons hydrogène apparaissent en vert<BR><IMG 
+            height=13 src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Les ponts soufre apparaissent en jaune</TD></TR>
+        <TR>
+          <TD width="11%"><B>l'épaisseur</B></TD>
+          <TD class=commande10 colSpan=3>ssbonds 50<BR>hbonds 10</TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>La liaison S-S prend une épaisseur 50<BR><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>La liaison hydrogène prend une épaisseur 10</TD></TR>
+        <TR>
+          <TD colSpan=2 rowSpan=3><B>Faire tourner les molécules</B></TD>
+          <TD colSpan=2 rowSpan=3><I>Faire tourner avec la souris<BR>clic 
+            gauche : rotation X-Y<BR>clic droit : translation<BR>clic droit + 
+            majuscule enfoncée :rotation X-Z </I></TD>
+          <TD class=commande10 width="20%">rotate y 90</TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Rotation de la molécule selon l'axe des Y de 90 °</TD></TR>
+        <TR>
+          <TD class=commande10 width="20%">rotate x 20</TD>
+          <TD width="34%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Rotation de la molécule selon l'axe des X de 20 °</TD></TR>
+        <TR>
+          <TD class=commande10 width="20%" height=32>rotate z 50</TD>
+          <TD width="34%" height=32><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Rotation de la molécule selon l'axe des Z de 50 
+        °</TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=cellule>Afficher dans le module command line&nbsp; &amp; 
+    Scripts</TD></TR>
+  <TR>
+    <TD height=2>
+      <TABLE width="100%" border=1>
+        <TBODY>
+        <TR>
+          <TD width="23%" height=21>
+            <DIV align=center><B>Projet</B></DIV></TD>
+          <TD width="23%" height=21>
+            <DIV align=center><B><FONT 
+          color=#000000>Commandes</FONT></B></DIV></TD>
+          <TD width="54%" height=21>
+            <DIV align=center><B>Explications et <FONT 
+            color=#000000>exemples</FONT></B></DIV></TD></TR>
+        <TR>
+          <TD width="23%"><B>Afficher une instruction</B></TD>
+          <TD class=commande10 width="23%">echo</TD>
+          <TD width="54%"><SPAN class=commande10>echo Comment expliquer la 
+            disposition ?</SPAN><BR><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>La question est affichée dans le module command Line. Cette 
+            commande est utile pour la réalisation de scripts</TD></TR>
+        <TR>
+          <TD width="23%"><B>Stopper le déroulement d'un script</B></TD>
+          <TD class=commande10 width="23%">pause</TD>
+          <TD width="54%">
+            <P><SPAN class=commande10>echo Comment expliquer la disposition 
+            ?</SPAN><BR><SPAN class=commande10>pause<BR></SPAN><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Le script s'arrête. Il faut appuyer sur la barre espace 
+            pour continuer. Utile pour réaliser un questionnaire sans un script. 
+            </P></TD></TR>
+        <TR>
+          <TD width="23%"><B>Lancer un script</B></TD>
+          <TD class=commande10 width="23%">script adnsec.scr</TD>
+          <TD width="54%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>Le script ADNSEC.scr est lancé.<BR>Remarque : le 
+            fichier<SPAN class=commande10> ADNSEC.scr</SPAN> doit être placé 
+            dans le même dossier que <SPAN 
+        class=commande10>Raswin.exe</SPAN></TD></TR>
+        <TR>
+          <TD width="23%"><B>Afficher une molécule</B></TD>
+          <TD class=commande10 width="23%">load "ADN.pdb"</TD>
+          <TD width="54%"><IMG height=13 
+            src="Rasmol  principales commandes_fichiers/a_trired.gif" 
+            width=15>La molécule doit&nbsp; être placée dans le même dossier que 
+            <SPAN class=commande10>Raswin.exe.</SPAN></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD>&nbsp;</TD></TR>
+  <TR>
+    <TD>
+      <DIV align=center>Télécharger le document imprimable au format rtf : <IMG 
+      height=20 src="Rasmol  principales commandes_fichiers/charge.gif" 
+      width=16> <A 
+      href="http://www.ac-poitiers.fr/svt/res_med/Rasmol/commande.zip">Commande.zip 
+      12 ko</A></DIV></TD></TR></TBODY></TABLE>
+<P>&nbsp;</P>
+<P align=center><A 
+href="http://www.ac-poitiers.fr/svt/res_med/Rasmol/index.htm"><IMG height=24 
+src="Rasmol  principales commandes_fichiers/b_prec.gif" width=42 
+border=0></A></P>
+<HR>
 
-</body>
-</html>
-
-
+<DIV align=right>
+<TABLE width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD width="50%"><FONT size=1>Académie de Poitiers<BR>Courrier électronique 
+      : <A 
+      href="mailto:svt.enligne@ac-poitiers.fr">mailto:svt.enligne@ac-poitiers.fr</A></FONT></TD>
+    <TD vAlign=top align=right width="50%"><FONT size=2>Dernière mise à jour : 
+<!--webbot
+    bot="Timestamp" s-type="EDITED" s-format="%d/%m/%y" startspan -->02/07/01<!--webbot
+    bot="Timestamp" endspan i-checksum="12448" --> 
+</FONT></TD></TR></TBODY></TABLE></DIV>
+<P align=left></P>
+<P>&nbsp;</P></BODY></HTML>
